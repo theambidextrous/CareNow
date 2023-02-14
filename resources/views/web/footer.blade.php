@@ -6,11 +6,10 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget-one__about">
                         <div class="footer-widget-one__about-logo">
-                            <a href="index.html"><img src="{{ asset('assets/images/resources/footer-logo.png') }}" alt=""></a>
+                            <a href="{{ route('web.index') }}"><img src="{{ asset('assets/images/resources/footer-logo.png') }}" alt=""></a>
                         </div>
                         <p class="footer-widget-one__about-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis lorem augue, at
-                            dapibus quam aliquet ex...
+                            CareNow HealthFoundation Inc. is a non-profit organization dedicated to improving the health and well-being of communities globally.
                         </p>
                         <ul class="list-unstyled footer-widget-one__list">
                             <li>
@@ -18,7 +17,7 @@
                                     <span class="icon-place"></span>
                                 </div>
                                 <div class="text">
-                                    <p>13/A, Miranda Halim City.</p>
+                                    <p>{{ config('app.address') }}, {{config('app.city')}}</p>
                                 </div>
                             </li>
                             <li>
@@ -26,7 +25,7 @@
                                     <span class="icon-envelope"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:demo@example.com">demo@example.com</a></p>
+                                    <p><a href="mailto:{{ config('app.email') }}">{{ config('app.email') }}</a></p>
                                 </div>
                             </li>
                             <li>
@@ -34,7 +33,7 @@
                                     <span class="icon-call"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="tel:09969569535">099 695 695 35</a></p>
+                                    <p><a href="tel:{{ config('app.phone') }}">+{{ config('app.phone') }}</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -48,55 +47,55 @@
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-1.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-2.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-3.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-4.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-5.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-6.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-7.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-8.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="footer-widget-one__gallery-img">
                                     <img src="{{ asset('assets/images/resources/footer-widget-one-gallery-9.jpg') }}" alt="">
-                                    <a href="project-details.html"><span class="fa fa-link"></span></a>
+                                    <a href="#"><span class="fa fa-link"></span></a>
                                 </div>
                             </li>
                         </ul>
@@ -109,7 +108,7 @@
                             <li>
                                 <div class="footer-widget-one__latest-works-content">
                                     <h4 class="footer-widget-one__latest-works-title">
-                                        <a href="blog-details.html">Change your Life Through Education</a>
+                                        <a href="#">Change your Life Through Education</a>
                                     </h4>
                                     <p class="footer-widget-one__latest-works-date">
                                         July 29, 20222
@@ -119,7 +118,7 @@
                             <li>
                                 <div class="footer-widget-one__latest-works-content">
                                     <h4 class="footer-widget-one__latest-works-title">
-                                        <a href="blog-details.html">Donate your woolens this winter</a>
+                                        <a href="#">Donate your woolens this winter</a>
                                     </h4>
                                     <p class="footer-widget-one__latest-works-date">
                                         July 29, 20222

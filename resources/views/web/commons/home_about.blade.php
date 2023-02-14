@@ -1,4 +1,11 @@
-<section class="about-one">
+<style>
+    .about-custom {
+        background-color: #e4eee3 !important;
+        padding: 120px 0 90px;
+        z-index: 1;
+    }
+</style>
+<section class="about-one about-custom">
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -20,42 +27,15 @@
                             <span class="section-title__tagline">About Us</span>
                             <h2 class="section-title__title">We Can Save More Lifes With Your Helping Hand.</h2>
                         </div>
-                        <p class="about-one__text">Lorem ipsum is simply free text dolor sit amet,
-                            consecteturadipisicing elit sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua lonm andhn.</p>
-                        <ul class="list-unstyled about-one__points">
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-comment"></span>
-                                </div>
-                                <div class="text">
-                                    <h4>It service for business network.</h4>
-                                    <p>ill give you a complete account of the system, and
-                                        expound the actual teachings...</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-comment"></span>
-                                </div>
-                                <div class="text">
-                                    <h4>Business success rate solving.</h4>
-                                    <p>ill give you a complete account of the system, and
-                                        expound the actual teachings...</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <p class="about-one__text">CareNow HealthFoundation Inc. is a non-profit organization dedicated to improving the health and well-being of communities globally.</p>
+                        <br>
+                        <p class="about-one__text">Our mission is to provide access to quality healthcare services and promote health education to individuals and families, particularly those in underprivileged areas.</p>
+                        <br>
+                        <p class="about-one__text">We believe that access to quality healthcare is a fundamental human right and we are committed to working ...</p>
+                        <br>
                         <div class="about-one__bottom-video-box">
                             <div class="about-one__btn-box">
-                                <a href="about.html" class="thm-btn about-one__btn">About More</a>
-                            </div>
-                            <div class="about-one__video-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                    <div class="about-one__video-icon">
-                                        <span class="fa fa-play"></span>
-                                        <i class="ripple"></i>
-                                    </div>
-                                </a>
+                                <a href="{{ route('web.about') }}" class="thm-btn about-one__btn">About More</a>
                             </div>
                         </div>
                     </div>

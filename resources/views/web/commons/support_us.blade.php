@@ -7,7 +7,7 @@
             <div class="col-xl-6 col-lg-7">
                 <div class="support-us__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="support-us__content-box">
-                        <h3 class="support-us__title">Support Us</h3>
+                        <h3 class="support-us__title">Contact Us</h3>
                         <p class="support-us__text">Lorem ipsum dolor sit amet, consectetur nod adipisicing elit
                             sed do eiusmod tempor</p>
                         <form id="support-us__donate-form" name="donate_form" action="#" method="post">

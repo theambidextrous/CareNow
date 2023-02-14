@@ -74,14 +74,14 @@
         @yield('home_causes')
         <!--Causes One End-->
 
+        <!--Project One Start-->
+        @yield('home_projects')
+        <!--Project One End-->
 
         <!--Support Us Start-->
         @yield('support_us')
         <!--Support Us End-->
 
-        <!--Project One Start-->
-        @yield('home_projects')
-        <!--Project One End-->
 
         <!--Brand One Start-->
         @yield('partners')

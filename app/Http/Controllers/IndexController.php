@@ -10,4 +10,9 @@ class IndexController extends Controller
     {
         return view('web.index');
     }
+
+    public function about()
+    {
+        return view('web.about');
+    }
 }

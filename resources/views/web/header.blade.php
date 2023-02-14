@@ -2,6 +2,20 @@
     .main-header__top-address li+li {
         margin-left: 20px;
     }
+
+    .main-menu-wrapper__logo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main-menu .main-menu__list>li {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+
+    .thm-btn {
+        padding: 10px 30px 10px;
+    }
 </style>
 <header class="main-header clearfix">
     <div class="main-header__top clearfix">
@@ -47,7 +61,7 @@
                 <div class="main-header__top-right">
                     <ul class="list-unstyled main-header__top-right-content">
                         <li><a href="#">Login</a></li>
-                        <li><a href="#">Help Someone</a></li>
+                        <!-- <li><a href="#">Help Someone</a></li> -->
                         <!-- <li><a href="#" class="search-toggler"> <i class="fa fa-search"></i> Search</a></li> -->
                     </ul>
                 </div>
@@ -59,69 +73,46 @@
             <div class="main-menu-wrapper clearfix">
                 <div class="main-menu-wrapper__left">
                     <div class="main-menu-wrapper__logo">
-                        <a href="index.html"><img src="{{ asset('assets/images/resources/logo-1.png') }}" alt=""></a>
+                        <a href="{{ route('web.index') }}"><img src="{{ asset('assets/images/resources/logo-1.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="main-menu-wrapper__right">
                     <div class="main-menu-wrapper__main-menu">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                         <ul class="main-menu__list">
-                            <li class="dropdown current">
-                                <a href="index.html">Home</a>
+                            <li><a class="{{ $active == 'home' ? 'current' : ''}}" href="{{ route('web.index') }}">Home</a></li>
+                            <li><a class="{{ $active == 'about' ? 'current' : ''}}" href="{{ route('web.about') }}">About</a></li>
+                            <li class="dropdown {{ $active == 'causes' ? 'current' : ''}}">
+                                <a href="#">What we do</a>
                                 <ul>
-                                    <li>
-                                        <a href="index.html">Home One</a>
-                                    </li>
-                                    <li><a href="index2.html">Home Two</a></li>
-                                    <li><a href="index3.html">Home Three</a></li>
-                                    <li class="dropdown">
-                                        <a href="#">Header Styles</a>
-                                        <ul>
-                                            <li><a href="index.html">Header One</a></li>
-                                            <li><a href="index2.html">Header Two</a></li>
-                                            <li><a href="index3.html">Header Three</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{ route('ta.health') }}">Health & Nutrition</a></li>
+                                    <li><a href="{{ route('ta.agriculture') }}">Agriculture & Livelihood</a></li>
+                                    <li><a href="{{ route('ta.education') }}">Education & Youth empowerment</a></li>
+                                    <li><a href="{{ route('ta.energy') }}">Renewable energy</a></li>
+                                    <li><a href="{{ route('ta.water') }}">Water & Sanitation</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="dropdown">
-                                <a href="#">Pages</a>
+                            <li class="dropdown {{ $active == 'locations' ? 'current' : ''}}">
+                                <a href="#">Where we work</a>
                                 <ul>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="team-details.html">Team Details</a></li>
-                                    <li><a href="projects.html">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                    <li><a href="testimonials.html">Testimonial</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="404.html">404 Error</a></li>
+                                    <li><a href="#">Nairobi</a></li>
+                                    <li><a href="#">Tana River</a></li>
+                                    <li><a href="#">Garissa</a></li>
+                                    <li><a href="#">Wajir</a></li>
+                                    <li><a href="#">Mandera</a></li>
                                 </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Donation</a>
-                                <ul>
-                                    <li><a href="donation.html">Donation</a></li>
-                                    <li><a href="donation-list.html">Donation List</a></li>
-                                    <li><a href="donation-details.html">Donation Details</a></li>
-                                    <li><a href="donate-now.html">Donate Now</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="events.html">Events</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#">Blog</a>
                                 <ul>
-                                    <li><a href="blog-v-1.html">Blog V-1</a></li>
-                                    <li><a href="blog-v-2.html">Blog V-2</a></li>
-                                    <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Photos & Videos</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
-                    <a href="donate-now.html" class="thm-btn main-header__btn">Donate Now</a>
+                    <a href="#" class="thm-btn main-header__btn">Donate Now</a>
                 </div>
             </div>
         </div>
